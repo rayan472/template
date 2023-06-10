@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contanier">
+        <h1> Sing Up Today</h1>
+        <!-- Form -->
+        <form id="form" >
+            <!--full Name   -->
+            <div class="form-group">
+                <label for="name">Full name</label>
+                <input type="text" id="name" placeholder=" Drop urFull Name " name="name" required minlength="3" maxlength="100">
+            </div>
+            <!-- Drop  phone number -->
+            <div class="form-group">
+                <label for="Phone ">Phone Number</label>
+                <input type="tel" id="Phone" placeholder="555-555-5555" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+            </div>
+            <!--  Drop ur Email  -->
+            <div class="form-group">
+                <label for="Email ">Email</label>
+                <input type="email" id="Phone" placeholder="Drop ur Email" name="email"  required>
+            </div>
+            <!-- Website  URL  -->
+            <div class="form-group">
+                <label for="Website">Website URL </label>
+                <input type="url" id="website" placeholder="http://jacinto.desgin" required  name="website" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
+            </div>
+            <!-- Passwords -->
+            <div class="form-group">
+                <label for="Password1 ">Passwords </label>
+                <input type="password" id="Password1" placeholder="Create password" required  name="password"
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" title="please inlucde at uppercase character , and  1 number .
+                ">
+            </div>
+            <!-- Conform Password -->
+            <div class="form-group">
+                <label for="Password2 ">Confirm Passwords </label>
+                <input type="password" id="Password2" placeholder="Confirm password" required>
+            </div>
+            <button type="submit"> Register</button>
+            <!-- Error/Success Message  -->
+            
+        </form>
+        <div class="message-container">
+            <h3 id="Message"> Don't hesitate!</h3>
+
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
